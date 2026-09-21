@@ -7,10 +7,10 @@ const router = express.Router()
 router.route('/').get(MoviesController.apiGetMovies)
 
 router
-  .route("/review")
-  .post(ReviewsController.apiPostReview)
-  .put(ReviewsController.apiUpdateReview)
+    .route("/review")
+    .post(ReviewsController.apiPostReview)
+    .put(ReviewsController.apiUpdateReview)
 
-  .delete(ReviewsController.apiDeleteReview)
+    .delete(ReviewsController.apiDeleteReview)
 
 export default router
